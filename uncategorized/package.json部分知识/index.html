@@ -39,7 +39,7 @@
 <meta name="keywords" content="nodejs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pacakge.json部分知识理解">
-<meta property="og:url" content="http://yoursite.com/2020/09/04/package.json部分知识/index.html">
+<meta property="og:url" content="http://yoursite.com/uncategorized/package.json部分知识/index.html">
 <meta property="og:site_name" content="Freeman">
 <meta property="og:description" content="Version软件版本号有四部分组成：  第一部分为主版本号，变化了表示有了一个不兼容上个版本的大更改。 第二部分为次版本号，变化了表示增加了新功能，并且可以向后兼容。 第三部分为修订版本号，变化了表示有bug修复，并且可以向后兼容。 第四部分为日期版本号加希腊字母版本号，希腊字母版本号共有五种，分别为base、alpha、beta 、RC 、 release  12345678&amp;#123;  &quot;">
 <meta property="og:locale" content="zh-Hans">
@@ -245,13 +245,13 @@
 </li>
 <li><p>脚本钩子</p>
 <p>npm 脚本有pre和post两个钩子。举例来说，build脚本命令的钩子就是prebuild和postbuild。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  &quot;prebuild&quot;: &quot;echo I run before the build script&quot;,</span><br><span class="line">  &quot;build&quot;: &quot;cross-env NODE_ENV=production webpack&quot;,</span><br><span class="line">&quot;postbuild&quot;: &quot;echo I run after the build script&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight smalltalk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">"prebuild"</span>: <span class="comment">"echo I run before the build script"</span>,</span><br><span class="line">  <span class="comment">"build"</span>: <span class="comment">"cross-env NODE_ENV=production webpack"</span>,</span><br><span class="line"><span class="comment">"postbuild"</span>: <span class="comment">"echo I run after the build script"</span></span><br></pre></td></tr></table></figure>
 <p>用户执行npm run build的时候，会自动按照下面的顺序执行。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run prebuild &amp;&amp; npm run build &amp;&amp; npm run postbuild</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="builtin-name">run</span> prebuild &amp;&amp; npm <span class="builtin-name">run</span> build &amp;&amp; npm <span class="builtin-name">run</span> postbuild</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>  因此，可以在这两个钩子里面，完成一些准备工作和清理工作。下面是一个例子。</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;clean&quot;: &quot;rimraf ./dist &amp;&amp; mkdir dist&quot;,</span><br><span class="line">&quot;prebuild&quot;: &quot;npm run clean&quot;,</span><br><span class="line">&quot;build&quot;: &quot;cross-env NODE_ENV=production webpack&quot;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"clean"</span>: <span class="string">"rimraf ./dist &amp;&amp; mkdir dist"</span>,</span><br><span class="line"><span class="string">"prebuild"</span>: <span class="string">"npm run clean"</span>,</span><br><span class="line"><span class="string">"build"</span>: <span class="string">"cross-env NODE_ENV=production webpack"</span></span><br></pre></td></tr></table></figure>
 <p>  npm 默认提供下面这些钩子。</p>
 <ul>
 <li>prepublish，postpublish</li>
@@ -289,13 +289,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/09/04/打开hexo的next主题下的tags/" rel="prev">打开next主题下的tags、分类模式</a>
+              <a href="/uncategorized/打开hexo的next主题下的tags/" rel="prev">打开next主题下的tags、分类模式</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/09/04/windows自定义bash的alias/" rel="next">windows自定义bash的alias</a>
+              <a href="/uncategorized/一个canvas画的可自定义颜色和起止位置的动画百分比/" rel="next">自定义起止位置的canvas动画百分比</a>
             
           </div>
         </div>

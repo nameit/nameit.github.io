@@ -26,7 +26,7 @@
 
 
 
-  <meta name="keywords" content="前端环境,">
+  <meta name="keywords" content="git,">
 
 
 
@@ -35,18 +35,20 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4">
 
 
-<meta name="description" content="起因随着公司业务的极具增长，赶进度式的开发要求前端人员能更高效的构建自己的开发环境。项目跑了很多，但从各方面来看总是不够快。 为什么是它们跑项目总要起服务，从最初的apache到connect中间件以及现在的browser-sync，browser-sync的实时、快速响应文件的更改并自动刷新页面，移动端还能真机调试是我选择他的原因。Express，本想用它来起服务的，但有了browserSync">
-<meta name="keywords" content="前端环境">
+<meta name="description" content="缘由在git项目下对比修改过的文件我们一般用git diff来操作，如果改动不大可以在git bash左侧看到由加减号列出增减的改动内容，但如果改动的内容太多，在git bash上显示众多的改动内容会是一个令人头疼的问题，因为git bash显示的对比过于简单、不直观，因此我们需要外部的工具来帮我们完成直观的对比。 配置git也意识到了这一点，所以我们可以通过.gitconfig文件来配置我们需要">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="利用 Expres+jade+stylus+nodemon+browserSync 构建高效前端环境">
-<meta property="og:url" content="http://yoursite.com/2016/05/27/利用Expres-jade-stylus-nodemon构建前端项目/index.html">
+<meta property="og:title" content="git项目中用工具直观的对比文件（windows）">
+<meta property="og:url" content="http://yoursite.com/前端/git项目中用工具直观的对比文件（windows）/index.html">
 <meta property="og:site_name" content="Freeman">
-<meta property="og:description" content="起因随着公司业务的极具增长，赶进度式的开发要求前端人员能更高效的构建自己的开发环境。项目跑了很多，但从各方面来看总是不够快。 为什么是它们跑项目总要起服务，从最初的apache到connect中间件以及现在的browser-sync，browser-sync的实时、快速响应文件的更改并自动刷新页面，移动端还能真机调试是我选择他的原因。Express，本想用它来起服务的，但有了browserSync">
+<meta property="og:description" content="缘由在git项目下对比修改过的文件我们一般用git diff来操作，如果改动不大可以在git bash左侧看到由加减号列出增减的改动内容，但如果改动的内容太多，在git bash上显示众多的改动内容会是一个令人头疼的问题，因为git bash显示的对比过于简单、不直观，因此我们需要外部的工具来帮我们完成直观的对比。 配置git也意识到了这一点，所以我们可以通过.gitconfig文件来配置我们需要">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-11T07:48:43.000Z">
+<meta property="og:image" content="http://www.edowning.net/pic/20083314532471369.png">
+<meta property="og:updated_time" content="2020-09-04T02:56:58.994Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用 Expres+jade+stylus+nodemon+browserSync 构建高效前端环境">
-<meta name="twitter:description" content="起因随着公司业务的极具增长，赶进度式的开发要求前端人员能更高效的构建自己的开发环境。项目跑了很多，但从各方面来看总是不够快。 为什么是它们跑项目总要起服务，从最初的apache到connect中间件以及现在的browser-sync，browser-sync的实时、快速响应文件的更改并自动刷新页面，移动端还能真机调试是我选择他的原因。Express，本想用它来起服务的，但有了browserSync">
+<meta name="twitter:title" content="git项目中用工具直观的对比文件（windows）">
+<meta name="twitter:description" content="缘由在git项目下对比修改过的文件我们一般用git diff来操作，如果改动不大可以在git bash左侧看到由加减号列出增减的改动内容，但如果改动的内容太多，在git bash上显示众多的改动内容会是一个令人头疼的问题，因为git bash显示的对比过于简单、不直观，因此我们需要外部的工具来帮我们完成直观的对比。 配置git也意识到了这一点，所以我们可以通过.gitconfig文件来配置我们需要">
+<meta name="twitter:image" content="http://www.edowning.net/pic/20083314532471369.png">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -56,7 +58,7 @@
   };
 </script>
 
-    <title> 利用 Expres+jade+stylus+nodemon+browserSync 构建高效前端环境 // Freeman </title>
+    <title> git项目中用工具直观的对比文件（windows） // Freeman </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 <!--[if lte IE 8]>
@@ -159,7 +161,7 @@
           
           
             
-              利用 Expres+jade+stylus+nodemon+browserSync 构建高效前端环境
+              git项目中用工具直观的对比文件（windows）
             
           
         </h1>
@@ -168,11 +170,22 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2016-05-27T16:25:51+08:00" content="2016-05-27">
-            2016-05-27
+          <time itemprop="dateCreated" datetime="2020-09-04T10:56:58+08:00" content="2020-09-04">
+            2020-09-04
           </time>
         </span>
 
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+              
+              
+
+            
+          </span>
         
 
         
@@ -187,11 +200,10 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>随着公司业务的极具增长，赶进度式的开发要求前端人员能更高效的构建自己的开发环境。<br>项目跑了很多，但从各方面来看总是不够快。</p>
-<h1 id="为什么是它们"><a href="#为什么是它们" class="headerlink" title="为什么是它们"></a>为什么是它们</h1><p>跑项目总要起服务，从最初的apache到connect中间件以及现在的browser-sync，browser-sync的实时、快速响应文件的更改并自动刷新页面，移动端还能真机调试是我选择他的原因。<br>Express，本想用它来起服务的，但有了browserSync似乎就多余了，但路由控制和中间件的使用总少不了它，比起之前先生成静态html文件再起服务，express要快不只一点点。<br>jade，额……目前改名为pug。喜欢其缩进式的表达方式—简洁、清晰，传参和数据导入都有，作为模板元老，管理也够用了，而且express默认的模板引擎也是它。<br>stylus,css的预编译器。喜欢他也是因为其简洁缩进式的风格，不需要冒号、分号和括号，好处就是如果你要在缩进式的中间添加一个类名，直接添加即可，不需要再去找对应结束的大括号，而且sass有的功能他几乎都有，当然它也提供了中间件的支持和自带sourcemaps，相对于sass比起来，sytlus更轻巧，对node更有亲和力，对于我这样一个懒前端来说不需要安装ruby之类的外部语言是最好不过了。<br>既然采用路由的方式来构建，我们最终能在浏览器端看到文件的改变需要重启app应用，nodemon这个轻量级的自动重启工具就必不可少。</p>
-<h1 id="项目目录"><a href="#项目目录" class="headerlink" title="项目目录"></a>项目目录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── dist</span><br><span class="line">│   ├── css</span><br><span class="line">│   ├── images</span><br><span class="line">│   ├── js</span><br><span class="line">│   └── temp</span><br><span class="line">├── docs       // 项目的相关文档</span><br><span class="line">├── gulpfile.js  // 运行dist用到的插件</span><br><span class="line">├── jade</span><br><span class="line">│   ├── _includes    // 用于include的部分</span><br><span class="line">│   └── _layout   // 用于继承的模板</span><br><span class="line">├── package.json  // 依赖包</span><br><span class="line">├── public    // 静态文件目录</span><br><span class="line">│   ├── css</span><br><span class="line">│   ├── images</span><br><span class="line">│   ├── js</span><br><span class="line">│   └── temp</span><br><span class="line">├── README.md</span><br><span class="line">├── server.js  // 主app入口</span><br><span class="line">└── stylus</span><br><span class="line">    ├── _components  // 组件样式</span><br><span class="line">    ├── _config    // 样式配置</span><br><span class="line">    └── css       // 主文件</span><br></pre></td></tr></table></figure>
-<h1 id="项目注意事项"><a href="#项目注意事项" class="headerlink" title="项目注意事项"></a>项目注意事项</h1><p>为了方便配置路由，package.json中引入了glob这个依赖，有了它我们就可以找到并筛选想要的文件，以便我们对路由的统一配置。</p>
-<p>最后为了方便开发获取代码，生成dist文件夹推入dist的分支。</p>
+        <span itemprop="articleBody"><h2 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h2><p>在git项目下对比修改过的文件我们一般用<code>git diff</code>来操作，如果改动不大可以在git bash左侧看到由加减号列出增减的改动内容，但如果改动的内容太多，在git bash上显示众多的改动内容会是一个令人头疼的问题，因为git bash显示的对比过于简单、不直观，因此我们需要外部的工具来帮我们完成直观的对比。</p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>git也意识到了这一点，所以我们可以通过.gitconfig文件来配置我们需要的外部对比工具（比如winMerge）。<br>文件（一般直接在C盘user里你的名字文件夹下）可以配置如下：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[mergetool]</span><br><span class="line">    prompt = <span class="literal">false</span></span><br><span class="line">    keepBackup = <span class="literal">false</span></span><br><span class="line">    keepTemporaries = <span class="literal">false</span></span><br><span class="line"> </span><br><span class="line">[merge]</span><br><span class="line">   <span class="built_in"> tool </span>= winmerge</span><br><span class="line"> </span><br><span class="line">[mergetool <span class="string">"winmerge"</span>]</span><br><span class="line">    name = WinMerge</span><br><span class="line">    trustExitCode = <span class="literal">true</span></span><br><span class="line">    cmd = <span class="string">"/c/Program\\ Files\\ \\(x86\\)/WinMerge/WinMergeU.exe"</span> -u -e -dl \<span class="string">"Local\" -dr \"Remote\" <span class="variable">$LOCAL</span> <span class="variable">$REMOTE</span> <span class="variable">$MERGED</span></span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">[diff]</span></span><br><span class="line"><span class="string">    tool = winmerge</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">[difftool "</span>winmerge<span class="string">"]</span></span><br><span class="line"><span class="string">    name = WinMerge</span></span><br><span class="line"><span class="string">    trustExitCode = true</span></span><br><span class="line"><span class="string">    cmd = "</span>/c/Program\\ Files\\ \\(x86\\)/WinMerge/WinMergeU.exe<span class="string">" -u -e <span class="variable">$LOCAL</span> <span class="variable">$REMOTE</span></span></span><br></pre></td></tr></table></figure></p>
+<p>里面的具体参数请参看<a href="http://git-scm.com/docs/git-config" target="_blank" rel="noopener">git官方说明</a>。</p>
+<h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><p>当你再次遇上需要对比或合并时，就可以运行<code>git difftool &lt;file&gt;</code> 或 <code>git mergetool &lt;file&gt;</code> 来自动打开对比工具进行直观的对比。<br>– just enjoy it–<br><img src="http://www.edowning.net/pic/20083314532471369.png" alt="图片"></p>
 </span>
       
     </div>
@@ -200,7 +212,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/前端环境/" rel="tag">#前端环境</a>
+            <a href="/tags/git/" rel="tag">#git</a>
           
         </div>
       
@@ -209,11 +221,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/11/修改Git默认编辑器/" rel="prev">修改Git默认编辑器</a>
+              <a href="/前端/http-head/" rel="prev">HTTP协议详解之消息报头篇</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/uncategorized/修改Git默认编辑器/" rel="next">修改Git默认编辑器</a>
             
           </div>
         </div>
@@ -318,7 +332,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#起因"><span class="nav-number">1.</span> <span class="nav-text">起因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么是它们"><span class="nav-number">2.</span> <span class="nav-text">为什么是它们</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目目录"><span class="nav-number">3.</span> <span class="nav-text">项目目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目注意事项"><span class="nav-number">4.</span> <span class="nav-text">项目注意事项</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缘由"><span class="nav-number">1.</span> <span class="nav-text">缘由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置"><span class="nav-number">2.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调用"><span class="nav-number">3.</span> <span class="nav-text">调用</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

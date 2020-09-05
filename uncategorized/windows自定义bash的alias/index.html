@@ -26,7 +26,7 @@
 
 
 
-  <meta name="keywords" content="git,">
+  <meta name="keywords" content="git,bash,">
 
 
 
@@ -35,18 +35,18 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4">
 
 
-<meta name="description" content="下载tree下载地址请下载 Binaries 版本。 添加tree将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。 原文地址 例子1tree -I node_modules -L 2 //忽略node_modules后只显示2级目录">
-<meta name="keywords" content="git">
+<meta name="description" content="缘由又来装逼了，看到同事的mac上可以简单敲gco就能切换分支，而自己在git bash里只能用敲git checkout， 麻烦！ 方法其实git bash支持自定义alias，如下两种方法 ：  1、在C盘用户名下的.gitconfig里可以输入[alias] co = checkout2、用命令 git config --global alias.co checkout  但这两种方法实际用">
+<meta name="keywords" content="git,bash">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows下的git bash中添加tree">
-<meta property="og:url" content="http://yoursite.com/2020/09/04/windows下的git-bash中添加tree/index.html">
+<meta property="og:title" content="windows自定义bash的alias">
+<meta property="og:url" content="http://yoursite.com/uncategorized/windows自定义bash的alias/index.html">
 <meta property="og:site_name" content="Freeman">
-<meta property="og:description" content="下载tree下载地址请下载 Binaries 版本。 添加tree将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。 原文地址 例子1tree -I node_modules -L 2 //忽略node_modules后只显示2级目录">
+<meta property="og:description" content="缘由又来装逼了，看到同事的mac上可以简单敲gco就能切换分支，而自己在git bash里只能用敲git checkout， 麻烦！ 方法其实git bash支持自定义alias，如下两种方法 ：  1、在C盘用户名下的.gitconfig里可以输入[alias] co = checkout2、用命令 git config --global alias.co checkout  但这两种方法实际用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-09-04T02:56:58.996Z">
+<meta property="og:updated_time" content="2020-09-04T07:42:29.334Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows下的git bash中添加tree">
-<meta name="twitter:description" content="下载tree下载地址请下载 Binaries 版本。 添加tree将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。 原文地址 例子1tree -I node_modules -L 2 //忽略node_modules后只显示2级目录">
+<meta name="twitter:title" content="windows自定义bash的alias">
+<meta name="twitter:description" content="缘由又来装逼了，看到同事的mac上可以简单敲gco就能切换分支，而自己在git bash里只能用敲git checkout， 麻烦！ 方法其实git bash支持自定义alias，如下两种方法 ：  1、在C盘用户名下的.gitconfig里可以输入[alias] co = checkout2、用命令 git config --global alias.co checkout  但这两种方法实际用">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -56,7 +56,7 @@
   };
 </script>
 
-    <title> windows下的git bash中添加tree // Freeman </title>
+    <title> windows自定义bash的alias // Freeman </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 <!--[if lte IE 8]>
@@ -159,7 +159,7 @@
           
           
             
-              windows下的git bash中添加tree
+              windows自定义bash的alias
             
           
         </h1>
@@ -168,22 +168,11 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2020-09-04T10:56:58+08:00" content="2020-09-04">
+          <time itemprop="dateCreated" datetime="2020-09-04T15:42:29+08:00" content="2020-09-04">
             2020-09-04
           </time>
         </span>
 
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -198,10 +187,16 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="下载tree"><a href="#下载tree" class="headerlink" title="下载tree"></a>下载tree</h1><p><a href="https://sourceforge.net/projects/gnuwin32/" target="_blank" rel="noopener">下载地址</a><br>请下载 Binaries 版本。</p>
-<h1 id="添加tree"><a href="#添加tree" class="headerlink" title="添加tree"></a>添加tree</h1><p>将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。</p>
-<p><a href="https://blog.csdn.net/mint_ying/article/details/82793911" target="_blank" rel="noopener">原文地址</a></p>
-<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tree -I node_modules -L 2 //忽略node_modules后只显示2级目录</span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><h3 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h3><p>又来装逼了，看到同事的mac上可以简单敲gco就能切换分支，而自己在git bash里只能用敲<code>git checkout</code>， 麻烦！</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>其实git bash支持自定义alias，如下两种方法 ：</p>
+<blockquote>
+<p>1、在C盘用户名下的.gitconfig里可以输入[alias] co = checkout<br>2、用命令 <code>git config --global alias.co checkout</code></p>
+</blockquote>
+<p>但这两种方法实际用的时候只能这样省略：<code>git co</code>， 前面还有git没有简写。  </p>
+<h3 id="bash-方法"><a href="#bash-方法" class="headerlink" title="bash 方法"></a>bash 方法</h3><p>后来想到git bash也是bash，于是用命令<code>alias gs=&quot;git status&quot;</code> 终于可以实现，莫急，窗口关闭后再打开又没了，需要重新设置。麻烦！</p>
+<h3 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h3><p>于是google了一下搜到可以在c盘自己用户名下建一个.bashrc文件专门用于存放自己的alias，类似：<figure class="highlight monkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alias</span> <span class="title">gs</span>=<span class="string">"git status"</span>    </span><br><span class="line"><span class="keyword">alias</span> <span class="title">gco</span>=<span class="string">"git checkout"</span>  </span><br><span class="line"><span class="keyword">alias</span> <span class="title">gada</span>=<span class="string">"git add --all"</span></span><br></pre></td></tr></table></figure></p>
+<p>然后还需在旁边加一个 .bash_profile 文件,文件中写入内容 <code>source ~/.bashrc</code>，<br>重开窗口输入<code>gco master</code> 成功切换到master分支！</p>
+</span>
       
     </div>
 
@@ -211,6 +206,8 @@
           
             <a href="/tags/git/" rel="tag">#git</a>
           
+            <a href="/tags/bash/" rel="tag">#bash</a>
+          
         </div>
       
 
@@ -218,13 +215,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/09/04/一个canvas画的可自定义颜色和起止位置的动画百分比/" rel="prev">自定义起止位置的canvas动画百分比</a>
+              <a href="/uncategorized/一个canvas画的可自定义颜色和起止位置的动画百分比/" rel="prev">自定义起止位置的canvas动画百分比</a>
             
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/09/04/promise/" rel="next">promise</a>
+              <a href="/前端/windows下的git-bash中添加tree/" rel="next">windows下的git bash中添加tree</a>
             
           </div>
         </div>
@@ -329,7 +326,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载tree"><span class="nav-number">1.</span> <span class="nav-text">下载tree</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加tree"><span class="nav-number">2.</span> <span class="nav-text">添加tree</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#缘由"><span class="nav-number">1.</span> <span class="nav-text">缘由</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法"><span class="nav-number">2.</span> <span class="nav-text">方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bash-方法"><span class="nav-number">3.</span> <span class="nav-text">bash 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#改进"><span class="nav-number">4.</span> <span class="nav-text">改进</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
