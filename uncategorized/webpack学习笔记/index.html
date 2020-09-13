@@ -26,7 +26,7 @@
 
 
 
-  <meta name="keywords" content="git,">
+  <meta name="keywords" content="webpack,">
 
 
 
@@ -35,18 +35,18 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4">
 
 
-<meta name="description" content="下载tree下载地址请下载 Binaries 版本。 添加tree将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。 原文地址 例子1tree -I node_modules -L 2 //忽略node_modules后只显示2级目录">
-<meta name="keywords" content="git">
+<meta name="description" content="入口文件 entry: &amp;#39;./index.js&amp;#39;   entry: [&amp;#39;./index.js&amp;#39;, &amp;#39;./other.js&amp;#39;]   entry: {main: &amp;#39;./index.js&amp;#39;, other: &amp;#39;./other.js&amp;#39;}    第三种对象模式需要指定多出口12345output: &amp;#123;    // pat">
+<meta name="keywords" content="webpack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="windows下的git bash中添加tree">
-<meta property="og:url" content="http://yoursite.com/前端/windows下的git-bash中添加tree/index.html">
+<meta property="og:title" content="webpack学习笔记">
+<meta property="og:url" content="http://yoursite.com/uncategorized/webpack学习笔记/index.html">
 <meta property="og:site_name" content="Freeman">
-<meta property="og:description" content="下载tree下载地址请下载 Binaries 版本。 添加tree将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。 原文地址 例子1tree -I node_modules -L 2 //忽略node_modules后只显示2级目录">
+<meta property="og:description" content="入口文件 entry: &amp;#39;./index.js&amp;#39;   entry: [&amp;#39;./index.js&amp;#39;, &amp;#39;./other.js&amp;#39;]   entry: {main: &amp;#39;./index.js&amp;#39;, other: &amp;#39;./other.js&amp;#39;}    第三种对象模式需要指定多出口12345output: &amp;#123;    // pat">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-09-04T02:56:58.996Z">
+<meta property="og:updated_time" content="2020-09-13T04:57:40.726Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows下的git bash中添加tree">
-<meta name="twitter:description" content="下载tree下载地址请下载 Binaries 版本。 添加tree将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。 原文地址 例子1tree -I node_modules -L 2 //忽略node_modules后只显示2级目录">
+<meta name="twitter:title" content="webpack学习笔记">
+<meta name="twitter:description" content="入口文件 entry: &amp;#39;./index.js&amp;#39;   entry: [&amp;#39;./index.js&amp;#39;, &amp;#39;./other.js&amp;#39;]   entry: {main: &amp;#39;./index.js&amp;#39;, other: &amp;#39;./other.js&amp;#39;}    第三种对象模式需要指定多出口12345output: &amp;#123;    // pat">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -56,7 +56,7 @@
   };
 </script>
 
-    <title> windows下的git bash中添加tree // Freeman </title>
+    <title> webpack学习笔记 // Freeman </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 <!--[if lte IE 8]>
@@ -159,7 +159,7 @@
           
           
             
-              windows下的git bash中添加tree
+              webpack学习笔记
             
           
         </h1>
@@ -168,22 +168,11 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2020-09-04T10:56:58+08:00" content="2020-09-04">
-            2020-09-04
+          <time itemprop="dateCreated" datetime="2020-09-09T21:20:59+08:00" content="2020-09-09">
+            2020-09-09
           </time>
         </span>
 
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; 分类于
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
-
-              
-              
-
-            
-          </span>
         
 
         
@@ -198,10 +187,44 @@
       
 
       
-        <span itemprop="articleBody"><h1 id="下载tree"><a href="#下载tree" class="headerlink" title="下载tree"></a>下载tree</h1><p><a href="https://sourceforge.net/projects/gnuwin32/" target="_blank" rel="noopener">下载地址</a><br>请下载 Binaries 版本。</p>
-<h1 id="添加tree"><a href="#添加tree" class="headerlink" title="添加tree"></a>添加tree</h1><p>将下载文件的 bin/ 目录下的 tree.exe 复制到 c:/program files/git/usr/bin 目录中。</p>
-<p><a href="https://blog.csdn.net/mint_ying/article/details/82793911" target="_blank" rel="noopener">原文地址</a></p>
-<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">tree</span> -I node_modules -L <span class="number">2</span> <span class="comment">//忽略node_modules后只显示2级目录</span></span><br></pre></td></tr></table></figure></span>
+        <span itemprop="articleBody"><h3 id="入口文件"><a href="#入口文件" class="headerlink" title="入口文件"></a>入口文件</h3><ul>
+<li><p><code>entry: &#39;./index.js&#39;</code> </p>
+</li>
+<li><p><code>entry: [&#39;./index.js&#39;, &#39;./other.js&#39;]</code> </p>
+</li>
+<li><p><code>entry: {main: &#39;./index.js&#39;, other: &#39;./other.js&#39;}</code> </p>
+</li>
+</ul>
+<h3 id="第三种对象模式需要指定多出口"><a href="#第三种对象模式需要指定多出口" class="headerlink" title="第三种对象模式需要指定多出口"></a>第三种对象模式需要指定多出口</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">output: &#123;</span><br><span class="line">    <span class="comment">// path: 绝对路径的字符串</span></span><br><span class="line">    path: path.resolve(__dirname, <span class="string">'./dist'</span>),</span><br><span class="line">    filename: <span class="string">'[name].[chunkhash:8].js'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="三种hash"><a href="#三种hash" class="headerlink" title="三种hash"></a>三种hash</h3><ul>
+<li><p>hash是打包后的该版本的hash，</p>
+</li>
+<li><p>chunkhash是对应每个chunk的hash</p>
+</li>
+<li>contenthash是针对内容改变（适用被引用的css文件）</li>
+</ul>
+<p>用chunkhash而不是hash来生成打包文件的目的是：使用浏览器缓存。比如</p>
+<p>index.js引用了a.js和b.js和styles.css，如果只改了index.js而不改变其他的文件，其他3个文件原本可以用浏览器的缓存防止重新加载新的一样的文件，如果用hash每次打包重新生成一个新的就要重新下载新的这3个文件。</p>
+<h3 id="Webpack-dev-server"><a href="#Webpack-dev-server" class="headerlink" title="Webpack-dev-server"></a>Webpack-dev-server</h3><p>package.json中的scripts属性里填写 <code>npx webpack-dev-server</code></p>
+<p>webpack.config.js中的devServer属性是个对象，属性有port、hot、open、contentBase、progress，proxy等</p>
+<ul>
+<li>Package.json中运行了<code>npx webpack-dev-server</code>后就可以在内存中存放输出的index.html和js等不会在dist中生成</li>
+<li>热更新<code>hot</code>：本地保存后自动刷新页面，不需要手动刷新。</li>
+<li>热模块更新hmr，适用于css：改变样式后页面局部（模块）刷新，可以保留其他状态</li>
+<li>代理<code>proxy</code>: 对象，防止跨域。键是代理的请求相对路径比如’/api/info’，值也是对象，其键target的值是代理的地址，比如’<a href="http://localhost:9092&#39;" target="_blank" rel="noopener">http://localhost:9092&#39;</a></li>
+</ul>
+<h3 id="按需加载"><a href="#按需加载" class="headerlink" title="按需加载"></a>按需加载</h3><p>代码中使用import(‘XXX’)的方式会按需加载，打包的时候会多出一个0.js</p>
+<h3 id="module"><a href="#module" class="headerlink" title="module"></a>module</h3><p>包含rules对象</p>
+<p><strong>babel</strong>:<strong>babel-loader</strong>只与webpack桥接，放到use属性的loader属性里、<strong>@babel/babel-core</strong>核心库，装了它才可以使用preset-env、<strong>@babel/preset-env</strong>各种新es特性转换为es5，放到use属性的options属性的presets属性里。</p>
+<blockquote>
+<p>通过上⾯的⼏步 还不够，默认的Babel只⽀持let等⼀些基础的特性转换，Promise等⼀些还有转换过来，这时候需要借助@babel/polyfill，把es的新特性都装进来，来弥补低版本浏览器中缺失的特性</p>
+</blockquote>
+<blockquote>
+<p>useBuiltIns 选项是 babel 7 的新功能，这个选项告诉 babel 如何配置 @babel/polyfill 。 它有三个参数可以使⽤： ①entry: 需要在 webpack 的⼊⼝⽂件⾥ import “@babel/polyfill” ⼀次。 babel会根据你的使⽤情况导⼊垫⽚，没有使⽤的功能不会被导⼊相应的垫⽚。因为是导入会造成污染全局 ②usage（试验阶段）: 不需要 import ，全⾃动检测，但是要安装@babel/polyfill 。类似@babel/plugin-transform-runtime ，不会造成全局污染。</p>
+</blockquote>
+<h3 id="plugins"><a href="#plugins" class="headerlink" title="plugins"></a>plugins</h3><p>常用插件：HtmlWebpackPlugin、CleanWebpackPlugin、webpack.HotModuleReplacementPlugin</p>
+<h3 id="optimization"><a href="#optimization" class="headerlink" title="optimization"></a>optimization</h3><p>optimize-css-assets-webpack-plugin、terser-webpack-plugin</p>
+</span>
       
     </div>
 
@@ -209,7 +232,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag">#git</a>
+            <a href="/tags/webpack/" rel="tag">#webpack</a>
           
         </div>
       
@@ -218,13 +241,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/uncategorized/一个canvas画的可自定义颜色和起止位置的动画百分比/" rel="prev">自定义起止位置的canvas动画百分比</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/前端/http-head/" rel="next">HTTP协议详解之消息报头篇</a>
+              <a href="/uncategorized/打开hexo的next主题下的tags/" rel="next">打开next主题下的tags、分类模式</a>
             
           </div>
         </div>
@@ -329,7 +350,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#下载tree"><span class="nav-number">1.</span> <span class="nav-text">下载tree</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加tree"><span class="nav-number">2.</span> <span class="nav-text">添加tree</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#入口文件"><span class="nav-number">1.</span> <span class="nav-text">入口文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三种对象模式需要指定多出口"><span class="nav-number">2.</span> <span class="nav-text">第三种对象模式需要指定多出口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种hash"><span class="nav-number">3.</span> <span class="nav-text">三种hash</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Webpack-dev-server"><span class="nav-number">4.</span> <span class="nav-text">Webpack-dev-server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按需加载"><span class="nav-number">5.</span> <span class="nav-text">按需加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#module"><span class="nav-number">6.</span> <span class="nav-text">module</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#plugins"><span class="nav-number">7.</span> <span class="nav-text">plugins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#optimization"><span class="nav-number">8.</span> <span class="nav-text">optimization</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>

@@ -156,6 +156,79 @@
           
           
             
+              <a class="post-title-link" href="/uncategorized/修改Git默认编辑器/" itemprop="url">
+                修改Git默认编辑器
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2018-05-11T15:48:43+08:00" content="2018-05-11">
+            2018-05-11
+          </time>
+        </span>
+
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody"><h3 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h3><p>最近用git commit –amend的时候自动跳出来的vim编辑器内输入“文件”的“文”老是不显示，于是怒下决心要把vim编辑器换成sublime编辑器。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>还好git和sublime text 3(Build 3065以上)支持了此功能，只需要敲入命令：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global core.editor <span class="string">"'D:/program files/sublime text 3/subl.exe' -w"</span></span><br></pre></td></tr></table></figure></p>
+<p>即可。<br>或<br>在.gitconfig文件里设置：<br><figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">core</span>]</span><br><span class="line">    editor = <span class="string">'D:/Program Files/Sublime Text 3/subl.exe'</span> -w</span><br></pre></td></tr></table></figure></p>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><blockquote>
+<ul>
+<li>setting 里的<code>hot_exit</code>需设置为 true</li>
+<li>setting 里的<code>remember_open_files</code>需设置为 true</li>
+<li>保存并关闭（CTRL+w）自动跳出来的tab页时才能起保存作用</li>
+</ul>
+</blockquote>
+<p><img src="/images/sublime-editor.png" alt="sublime-editor"></p>
+<p>参考<a href="http://stackoverflow.com/questions/8951275/how-can-i-make-sublime-text-the-default-editor-for-git" target="_blank" rel="noopener">stackoverflow</a></p>
+</span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/uncategorized/利用Expres-jade-stylus-nodemon构建前端项目/" itemprop="url">
                 利用 Expres+jade+stylus+nodemon+browserSync 构建高效前端环境
               </a>
@@ -250,7 +323,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -264,7 +337,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
